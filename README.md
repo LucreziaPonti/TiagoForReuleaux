@@ -5,8 +5,15 @@ This folder contains all the packages provided by Pal Robotics used to simulate 
 This repo has been used for the work done on the repository Reuleaux_new (https://github.com/LucreziaPonti/Reuleaux_new), therefore it contains some files that have been slightly modified from the original to better fit the work done. 
 For a clean installation follow the instructions and tutorials at: https://wiki.ros.org/Robots/TIAGo/Tutorials  
 
+### Installation
+To use TIAGo (with reuleaux - make sure to have done all the installation from the README) you can clone this repo, and install these additional packages that are required:
+```
+sudo apt install ros-noetic-four-wheel-steering-msgs ros-noetic-ddynamic-reconfigure ros-noetic-people-msgs ros-noetic-urdf-geometry-parser ros-noetic-twist-mux
+```
+
 
 ### Changes from original 
+- *tiago* : added metapackage useful for building - this repo contains many pkgs so sometimes it is convenient to use separate metapackages for the different parts of the ws so to build only the necessary ones (using catin build)
 - *tiago_ikfast_arm_plugin*: added package that contains the plugin for the IKFast kinematic solver developed for the planning group containing the arm (not the torso!);
 - *tiago_robot>tiago_description>urdf>torso.urdf.xacro* : added a frame (and tf) *torso_footprint* useful in the *reuleaux_bp_to_nav* package (see end of file);
 - *tiago_robot>tiago_description>robot>tiago.urdf.xacro* : added a plugin for the grasp (see end of file) - see the Grasp (**still needs to be setup**) repo for more info;
