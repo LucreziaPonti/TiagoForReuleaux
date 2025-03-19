@@ -8,7 +8,7 @@ For a clean installation follow the instructions and tutorials at: https://wiki.
 ### Installation
 To use TIAGo (with reuleaux - make sure to have done all the installation from the README) you can clone this repo, and install these additional packages that are required:
 ```
-sudo apt install ros-noetic-four-wheel-steering-msgs ros-noetic-ddynamic-reconfigure ros-noetic-people-msgs ros-noetic-urdf-geometry-parser ros-noetic-twist-mux
+sudo apt install ros-noetic-four-wheel-steering-msgs ros-noetic-ddynamic-reconfigure ros-noetic-people-msgs ros-noetic-urdf-geometry-parser ros-noetic-twist-mux ros-noetic-teb-local-planner
 ```
 
 
